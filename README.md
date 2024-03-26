@@ -1,4 +1,4 @@
-# BOB (Beware Of the Brain 🧠)
+# BOB (Build your Own Brain 🧠)
 A sample project.
 The goal is to identify valence (positivity 😂 or negativity 😡) from brain signals.
 
