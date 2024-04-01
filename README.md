@@ -4,4 +4,4 @@ In this project, I will write production-ready code - the code that my all other
 
 The goal of the project BOB is to identify valence (positivity 😂 or negativity 😡) from brain signals. Why? Because we are on the frontier of technological advances and novel applications will help us to better understand human needs, behaviour, and decision making.  
 
-Stay tuned 🤓 for the updates. The next update is scheduled for 01.04.2024 ⏲️.
+Stay tuned 🤓 for the updates. The next update is scheduled for 02.04.2024 ⏲️.
