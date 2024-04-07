@@ -9,7 +9,7 @@ from bob.models.atcnet_encoder import ATCNetEncoder
 
 @pytest.fixture
 def my_atcnet_encoder():
-    '''Returns a Wallet instance with a zero balance'''
+    '''Returns a ATCNetEncoder instance'''
     return ATCNetEncoder(num_electrodes=28, chunk_size=1125)
 
 
