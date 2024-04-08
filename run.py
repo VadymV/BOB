@@ -14,6 +14,7 @@ from torcheeg.trainers import BYOLTrainer
 
 import wandb
 from bob.datasets.deap import DEAP
+from bob.misc.misc import set_seed
 from bob.models.atcnet_encoder import ATCNetEncoder
 
 _DEVICE = 'cpu' if torch.cuda.is_available() else 'cpu'
@@ -49,7 +50,6 @@ def main():
     """
     Trains a model.
     """
-
     parser = create_args()
     args = parser.parse_args()
     logging.info('Args: %args', args)
@@ -66,6 +66,8 @@ def main():
         features_path = None
         split_path_test = None
         split_path_val = None
+
+    set_seed(args.seed)
 
     dataset = DEAP(root_path=data_path, io_path=features_path)
 
