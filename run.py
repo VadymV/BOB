@@ -77,17 +77,17 @@ def main():
     train_loader = DataLoader(train_dataset,
                               num_workers=_NUM_WORKERS,
                               pin_memory=_PIN_MEMORY,
-                              batch_size=4,
+                              batch_size=512,
                               shuffle=True)
     val_loader = DataLoader(val_dataset,
                             num_workers=_NUM_WORKERS,
                             pin_memory=_PIN_MEMORY,
-                            batch_size=4,
+                            batch_size=512,
                             shuffle=False)
     test_loader = DataLoader(test_dataset,
                              num_workers=_NUM_WORKERS,
                              pin_memory=_PIN_MEMORY,
-                             batch_size=4,
+                             batch_size=512,
                              shuffle=False)
 
     wandb.init(project='BOB')
