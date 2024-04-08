@@ -21,7 +21,6 @@ def set_seed(seed: int):
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
 
 
 def load_pickle(path_to_file: str) -> object:
