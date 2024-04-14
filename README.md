@@ -9,7 +9,7 @@ The goal of the project BOB is to identify valence (positivity 😂 or negativit
 are on the frontier of technological advances and novel applications will help us to better understand human needs,
 behaviour, and decision making.
 
-Stay tuned 🤓 for the updates. The next update is scheduled for 14.04.2024 ⏲️.
+Stay tuned 🤓 for the updates. The next update is scheduled for 14.04.2024 (**postponed to 15.04.2024**) ⏲️.
 
 ----
 
