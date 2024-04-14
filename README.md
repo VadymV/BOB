@@ -24,6 +24,7 @@ Stay tuned 🤓 for the updates. The next update is scheduled for 14.04.2024 (**
 - Create a folder (I will refer to this folder as PROJECT_FOLDER) and place the extracted data into this folder.
 
 ### Current state:
+- The script ```split_data.py``` preprocesses the data and splits the data into train/validation/test sets.
 - The script ```run.py``` trains a representation model in a self-supervised way without labels.
 - The training process can be seen on the W&B (https://wandb.ai/site) dashboard (you need to create an account).
 

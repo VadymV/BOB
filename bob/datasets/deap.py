@@ -9,6 +9,11 @@ from torcheeg.datasets import DEAPDataset
 from torcheeg.datasets.constants import DEAP_CHANNEL_LIST
 from torcheeg.transforms import PickElectrode
 
+PREPROCESSED_DATA_FOLDER_NAME = 'preprocessed_data'
+TRAIN_TEST_SPLIT_FOLDER_NAME = 'train_test'
+TRAIN_VAL_SPLIT_FOLDER_NAME = 'train_val'
+
+
 _OFFLINE_TRANSFORM = transforms.Compose([
     PickElectrode(PickElectrode.to_index_list(
         ['FP1', 'AF3', 'F3', 'F7',

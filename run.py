@@ -7,14 +7,17 @@ import logging
 import os
 
 import torch.cuda
+import wandb
+import yaml
 from pytorch_lightning.loggers import WandbLogger
 from torch.utils.data import DataLoader
 from torcheeg.model_selection import train_test_split_groupby_trial
 from torcheeg.trainers import BYOLTrainer
+from yaml import SafeLoader
 
-import wandb
-from bob.datasets.deap import DEAP
-from bob.misc.misc import set_seed
+from bob.datasets.deap import DEAP, PREPROCESSED_DATA_FOLDER_NAME, \
+    TRAIN_TEST_SPLIT_FOLDER_NAME, TRAIN_VAL_SPLIT_FOLDER_NAME
+from bob.misc.misc import set_seed, set_logging
 from bob.models.atcnet_encoder import ATCNetEncoder
 
 _DEVICE = 'cpu' if torch.cuda.is_available() else 'cpu'
@@ -34,11 +37,6 @@ def create_args() -> argparse.ArgumentParser:
                         type=str,
                         help='A path to the folder containing the DEAP data '
                              'called "data_preprocessed_python"')
-    parser.add_argument('--read_from_cache',
-                        action='store_true',
-                        help='If selected, assure that the preprocessed data '
-                             'are available in folders: "features", '
-                             '"split_test" and "split_val".')
     parser.add_argument('--seed',
                         type=int,
                         help='Seed for reproducible results.',
@@ -52,22 +50,24 @@ def main():
     """
     parser = create_args()
     args = parser.parse_args()
-    logging.info('Args: %args', args)
+
+    set_logging(args.project_path)
+    set_seed(args.seed)
+    logging.info('Args: %s', args)
+
+    current_path = os.path.dirname(os.path.realpath(__file__))
+    config_path = os.path.join(current_path, 'config.yaml')
+    with open(config_path) as f:
+        config = yaml.load(f, Loader=SafeLoader)
+
     data_path = os.path.join(args.project_path, 'data_preprocessed_python')
 
-    if args.read_from_cache:
-        features_path = os.path.join(args.project_path, 'features')
-        split_path_test = os.path.join(args.project_path, 'split_test')
-        split_path_val = os.path.join(args.project_path, 'split_val')
-        logging.info('Using existing features from %s', features_path)
-        logging.info('Using existing test split from %s', split_path_test)
-        logging.info('Using existing val split from %s', split_path_val)
-    else:
-        features_path = None
-        split_path_test = None
-        split_path_val = None
-
-    set_seed(args.seed)
+    features_path = os.path.join(args.project_path,
+                                 PREPROCESSED_DATA_FOLDER_NAME)
+    split_path_test = os.path.join(args.project_path,
+                                   TRAIN_TEST_SPLIT_FOLDER_NAME)
+    split_path_val = os.path.join(args.project_path,
+                                  TRAIN_VAL_SPLIT_FOLDER_NAME)
 
     dataset = DEAP(root_path=data_path, io_path=features_path)
 
