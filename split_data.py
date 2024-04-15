@@ -11,7 +11,7 @@ from collections import OrderedDict
 import torch.cuda
 from torcheeg.model_selection import train_test_split_groupby_trial
 
-from bob.datasets.deap import DEAP, PREPROCESSED_DATA_FOLDER_NAME, \
+from bob.data.deap import DEAP, PREPROCESSED_DATA_FOLDER_NAME, \
     TRAIN_TEST_SPLIT_FOLDER_NAME, TRAIN_VAL_SPLIT_FOLDER_NAME
 from bob.misc.misc import set_seed
 
@@ -52,7 +52,7 @@ def main():
         shutil.rmtree(torcheeg_path)
 
     # Create pre-processed data
-    dataset = DEAP(root_path=data_path, io_path=None)
+    dataset = DEAP(root_path=data_path, io_path=None, online_transform=None)
 
     # Create train and test indices
     train_val_dataset, _ = train_test_split_groupby_trial(

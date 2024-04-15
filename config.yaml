@@ -1,15 +1,15 @@
 batch_size_ssl: 512
 batch_size_linear_model: 32
-batch_size_cnn: 32
+batch_size_baseline: 32
 
-epochs_ssl: 500
-epochs_linear_model: 500
-epochs_cnn: 500
+epochs_ssl: 1000
+epochs_linear_model: 100
+epochs_baseline: 300
 
 learning_rate_ssl: 0.001
 learning_rate_linear_model: 0.001
-learning_rate_cnn: 0.001
+learning_rate_baseline: 0.001
 
 weight_decay_ssl: 0.0001
 weight_decay_linear_model: 0.0001
-weight_decay_cnn: 0.0001
+weight_decay_baseline: 0.0001

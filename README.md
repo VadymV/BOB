@@ -9,7 +9,8 @@ The goal of the project BOB is to identify valence (positivity 😂 or negativit
 are on the frontier of technological advances and novel applications will help us to better understand human needs,
 behaviour, and decision making.
 
-Stay tuned 🤓 for the updates. The next update is scheduled for 14.04.2024 (**postponed to 15.04.2024**) ⏲️.
+Stay tuned 🤓 for the updates. The next update is scheduled for **21.04.2024** ⏲️. 
+I will show how to train and serve the models on GKE.
 
 ----
 
@@ -25,19 +26,15 @@ Stay tuned 🤓 for the updates. The next update is scheduled for 14.04.2024 (**
 
 ### Current state:
 - The script ```split_data.py``` preprocesses the data and splits the data into train/validation/test sets.
-- The script ```run.py``` trains a representation model in a self-supervised way without labels.
+- The script ```train_ssl.py``` trains a representation model in a self-supervised way without labels.
+- The script ```train_linear.py``` trains a linear model in a supervised way with binary labels (positivity or negativity) on top of the SSL model.
+- The script ```train_baseline.py``` trains a baseline model in a supervised way with binary labels.
 - The training process can be seen on the W&B (https://wandb.ai/site) dashboard (you need to create an account).
 
-### Next steps:
-- A YAML file containing the hyperparameters (i.e. epochs, batch size, and other) and parameters.
-- A linear model that is trained in a supervised way (labels for valence are used) from the features learnt from by the
-  representation model. This model will classify brain data into two classes: positivity or negativity.
-- A baseline model that is trained in a supervised way (labels for valence are used) from engineered features. This
-  model will classify brain data into two classes: positivity or negativity.
+### Next update will include:
+- Deploying Kubeflow and Ray on Google Kubernetes Engine (GKE) for smooth training and serving of the models.
 - Statistical evaluation of the results achieved by linear and baseline models. Here, we want to evaluate which model
   performs better. For this, statistical significance of results will be reported using p-value and effect size.
-
-#### Afterwards, I will deploy Kubeflow and Ray on Google Kubernetes Engine (GKE) for smooth training and serving of the models.
 
 This is an open-source project done in my free time. 
 I have a full time job, so I will proceed as I have time. 

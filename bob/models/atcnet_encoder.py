@@ -29,7 +29,9 @@ class ATCNetEncoder(ATCNet):
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         """
         The forward pass of the ATCNetEncoder module.
-        Code of the forward pass is adapted from https://github.com/torcheeg/torcheeg/blob/v1.1.1/torcheeg/models/transformer/atcnet.py#L5-L175
+        Code of the forward pass is adapted from
+        https://github.com/torcheeg/torcheeg/blob/v1.1.1/torcheeg/models/
+        transformer/atcnet.py#L5-L175
 
         Args:
             x: The input tensor of shape (batch_size, num_electrodes,
