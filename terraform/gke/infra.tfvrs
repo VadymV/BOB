@@ -1,4 +1,4 @@
-# common variables
+# Must be set
 project_id = ""
 
 # network values
