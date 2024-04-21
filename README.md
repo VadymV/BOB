@@ -9,8 +9,8 @@ The goal of the project BOB is to identify valence (positivity 😂 or negativit
 are on the frontier of technological advances and novel applications will help us to better understand human needs,
 behaviour, and decision making.
 
-Stay tuned 🤓 for the updates. The next update is scheduled for **21.04.2024** ⏲️. 
-I will show how to train and serve the models on GKE.
+Stay tuned 🤓 for the updates. The next update is postponed to **28.04.2024** ⏲️. 
+I will show how to train and serve the models on GKE using Kubeflow.
 
 ----
 
@@ -31,11 +31,6 @@ I will show how to train and serve the models on GKE.
 - The script ```train_baseline.py``` trains a baseline model in a supervised way with binary labels.
 - The training process can be seen on the W&B (https://wandb.ai/site) dashboard (you need to create an account).
 
-### GKE setup:
-- Run ```cloud services enable container.googleapis.com gkehub.googleapis.com servicenetworking.googleapis.com cloudresourcemanager.googleapis.com```
-- ``cd terraform/gke``
-- Adjust ``infra.tfvrs`` accordingly
-- Run ``terraform init`` and ``terraform apply --var-file=infra.tfvars``
 ### Next update will include:
 - Deploying Kubeflow and Ray on Google Kubernetes Engine (GKE) for smooth training and serving of the models.
 - Statistical evaluation of the results achieved by linear and baseline models. Here, we want to evaluate which model
