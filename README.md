@@ -9,7 +9,7 @@ The goal of the project BOB is to identify valence (positivity 😂 or negativit
 are on the frontier of technological advances and novel applications will help us to better understand human needs,
 behaviour, and decision making.
 
-Stay tuned 🤓 for the updates. The next update is postponed to **29.04.2024** ⏲️. 
+Stay tuned 🤓 for the updates. The next update is postponed to **24.04.2024** ⏲️. 
 I will show how to train and serve the models on GKE using Kubeflow.
 
 ----
