@@ -11,6 +11,7 @@ behaviour, and decision making.
 
 Stay tuned 🤓 for the updates. The next update is postponed to **24.04.2024** ⏲️. 
 I will show how to train and serve the models on GKE using Kubeflow.
+Currently, I am evaluating which Cloud provider to use: GCP or Azure.
 
 ----
 
