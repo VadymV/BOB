@@ -39,7 +39,7 @@ elaborate end-to-end ML lifecycle. Nevertheless, I intend to do this.
 ### Current state:
 - The script ```split_data.py``` preprocesses the data and splits the data into train/validation/test sets.
 - The script ```train_ssl.py``` trains a representation model in a self-supervised way without labels.
-- The folder ```examples``` contains examples on how to train other models and to evaluate them.
+- The folder ```examples``` contains examples on how to train other models.
 - The training process can be seen on the W&B (https://wandb.ai/site) dashboard (you need to create an account).
 
 This is an open-source project done in my free time. 
