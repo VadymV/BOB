@@ -13,8 +13,7 @@ Stay tuned 🤓 for the updates.
 
 Update **24.04.2024**:
 After experimenting with Azure, I have decided to use GCP. 
-Google Cloud is more intuitive for me. I suppose for those who have background in Linux and software development,
-GCP would be a better choice. However, it is my personal opinion and I have previously used GCP.
+Google Cloud is more intuitive for me. However, it is my personal opinion and I have previously used GCP.
 Furthermore, GCP is probably a preferred choice when it comes to what I want to achieve with this project.
 
 The next update is scheduled on **28.04.2024** ⏲️.
