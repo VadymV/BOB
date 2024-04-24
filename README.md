@@ -42,10 +42,5 @@ elaborate end-to-end ML lifecycle. Nevertheless, I intend to do this.
 - The folder ```examples``` contains examples on how to train other models and to evaluate them.
 - The training process can be seen on the W&B (https://wandb.ai/site) dashboard (you need to create an account).
 
-### Next update will include:
-- Deploying Kubeflow and Ray on Google Kubernetes Engine (GKE) for smooth training and serving of the models.
-- Statistical evaluation of the results achieved by linear and baseline models. Here, we want to evaluate which model
-  performs better. For this, statistical significance of results will be reported using p-value and effect size.
-
 This is an open-source project done in my free time. 
 I have a full time job, so I will proceed as I have time. 
