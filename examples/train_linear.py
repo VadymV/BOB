@@ -1,5 +1,6 @@
 """
-This module trains a model.
+Trains a linear model in a supervised way with binary labels (positivity or negativity) on top of the SSL model.
+
 """
 
 import logging
@@ -33,7 +34,7 @@ def main():
     logging.info('Args: %s', args)
 
     current_path = os.path.dirname(os.path.realpath(__file__))
-    config_path = os.path.join(current_path, 'config.yaml')
+    config_path = os.path.join(current_path, '../config.yaml')
     with open(config_path, encoding='utf8') as f:
         config = yaml.load(f, Loader=SafeLoader)
 

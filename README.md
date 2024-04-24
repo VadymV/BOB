@@ -9,9 +9,20 @@ The goal of the project BOB is to identify valence (positivity 😂 or negativit
 are on the frontier of technological advances and novel applications will help us to better understand human needs,
 behaviour, and decision making.
 
-Stay tuned 🤓 for the updates. The next update is postponed to **24.04.2024** ⏲️. 
-I will show how to train and serve the models on GKE using Kubeflow.
-Currently, I am evaluating which Cloud provider to use: GCP or Azure.
+Stay tuned 🤓 for the updates. 
+
+Update **24.04.2024**:
+After experimenting with Azure, I have decided to use GCP. 
+Google Cloud is more intuitive for me. I suppose for those who have background in Linux and software development,
+GCP would be a better choice. However, it is my personal opinion and I have previously used GCP.
+Furthermore, GCP is probably a preferred choice when it comes to what I want to achieve with this project.
+
+The next update is scheduled on **28.04.2024** ⏲️.
+- I will deploy a containerized FastAPI web app on Google Cloud and GKE to predict valence :trophy:.
+
+Next steps:
+Kubeflow? Yes, but it requires a more careful planning and is a bit too much, when you do not have to build such an
+elaborate end-to-end ML lifecycle. Nevertheless, I intend to do this. 
 
 ----
 
@@ -28,8 +39,7 @@ Currently, I am evaluating which Cloud provider to use: GCP or Azure.
 ### Current state:
 - The script ```split_data.py``` preprocesses the data and splits the data into train/validation/test sets.
 - The script ```train_ssl.py``` trains a representation model in a self-supervised way without labels.
-- The script ```train_linear.py``` trains a linear model in a supervised way with binary labels (positivity or negativity) on top of the SSL model.
-- The script ```train_baseline.py``` trains a baseline model in a supervised way with binary labels.
+- The folder ```examples``` contains examples on how to train other models and to evaluate them.
 - The training process can be seen on the W&B (https://wandb.ai/site) dashboard (you need to create an account).
 
 ### Next update will include:

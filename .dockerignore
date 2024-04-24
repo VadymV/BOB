@@ -1,0 +1,7 @@
+.git*
+.pytest_cache
+.torcheeg
+dist
+lightning_logs
+wandb
+BOB*
