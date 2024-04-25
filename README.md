@@ -13,11 +13,11 @@ Stay tuned 🤓 for the updates.
 
 Update **24.04.2024**:
 After experimenting with Azure, I have decided to use GCP. 
-Google Cloud is more intuitive for me. However, it is my personal opinion and I have previously used GCP.
+Google Cloud is more intuitive for me than Azure. Additionally, I like the documentation and the accessibility of services on GCP better than on Azure. Though, it is my personal opinion and I have previously used GCP.
 Furthermore, GCP is probably a preferred choice when it comes to what I want to achieve with this project.
 
 The next update is scheduled on **28.04.2024** ⏲️.
-- I will deploy a containerized FastAPI web app on Google Cloud and GKE to predict valence :trophy:.
+- I will deploy a containerized FastAPI web app on Cloud Run and GKE to predict valence :trophy:.
 
 Next steps:
 Kubeflow? Yes, but it requires a more careful planning and is a bit too much, when you do not have to build such an
