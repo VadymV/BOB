@@ -7,7 +7,13 @@ have.
 
 The goal of the project BOB is to identify valence (positivity 😂 or negativity 😡) from brain signals. Why? Because we
 are on the frontier of technological advances and novel applications will help us to better understand human needs,
-behaviour, and decision making.
+behaviour, and decision-making.
+
+In short, my plan is the following: 
+1. Create a packaged Python code
+2. Deploy containerized code to an endpoint (e.g., Cloud Run, GKE)
+3. Let users make predictions of valence by accessing that endpoint
+4. Focus on deployable and manageable ML code. For this, I will use Kubeflow
 
 Stay tuned 🤓 for the updates. 
 
@@ -17,7 +23,7 @@ Google Cloud is more intuitive for me than Azure. Additionally, I like the docum
 Furthermore, GCP is probably a preferred choice when it comes to what I want to achieve with this project.
 
 The next update is scheduled for **28.04.2024** ⏲️.
-- I will deploy a containerized FastAPI web app on Cloud Run and GKE :trophy:.
+- I will deploy a containerized FastAPI web app on Cloud Run and GKE :trophy:
 
 Next step: Kubeflow. 
 
