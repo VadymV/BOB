@@ -18,9 +18,7 @@ Furthermore, GCP is probably a preferred choice when it comes to what I want to 
 
 The next update is scheduled on **28.04.2024** ⏲️.
 - I will deploy a containerized FastAPI web app on Cloud Run and GKE to predict valence :trophy:.
-
-Next steps:
-Kubeflow.
+Next steps: Kubeflow.
 ----
 
 ### General setup:
