@@ -20,9 +20,7 @@ The next update is scheduled on **28.04.2024** ⏲️.
 - I will deploy a containerized FastAPI web app on Cloud Run and GKE to predict valence :trophy:.
 
 Next steps:
-Kubeflow? Yes, but it requires a more careful planning and is a bit too much, when you do not have to build such an
-elaborate end-to-end ML lifecycle. Nevertheless, I intend to do this. 
-
+Kubeflow.
 ----
 
 ### General setup:
