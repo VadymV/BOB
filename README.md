@@ -23,7 +23,7 @@ In short, my plan is as follows:
 Stay tuned 🤓 for the updates.
 
 The next update is scheduled for **28.04.2024** ⏲️.
-- I will deploy a containerized FastAPI web app on Cloud Run and GKE :trophy:
+- Enable PyTorch serving :trophy:
 
 ----
 

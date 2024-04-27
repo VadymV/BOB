@@ -31,8 +31,8 @@ async def predict(file: UploadFile = File(...)):
         img_batch = np.expand_dims(image, 0)
 
         return {
-            'Rank': 0,
-            'Similarity': 0
+            'Rank': "TODO",
+            'Similarity': "TODO"
         }
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
@@ -45,5 +45,5 @@ async def index():
 
 
 if __name__ == '__main__':
-    uvicorn.run('app:app', host='0.0.0.0', port=8000)
+    uvicorn.run('app:app', host='127.0.0.1', port=8000)
 
