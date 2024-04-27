@@ -8,10 +8,10 @@ have.
 The goal of the project BOB is to identify valence (positivity 😂 or negativity 😡) from brain signals. Why? Because we
 are on the frontier of technological advances and novel applications will help us to better understand human needs,
 behaviour, and decision-making. 
-Here, I show how:
+Here, I show how
 - to train different models. See [README.md](./examples/DEAP/README.md)
 - to perform affective ranking of images according to their affective similarity
-to the brain response of a source image.
+to the brain response of a source image
 
 
 In short, my plan is as follows: 
