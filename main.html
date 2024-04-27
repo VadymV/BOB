@@ -68,7 +68,7 @@
             font-weight: bold;
         }
 
-        .result-confidence {
+        .result-similarity {
             margin-top: 10px;
         }
     </style>
@@ -89,7 +89,7 @@
     <div class="result-container" id="resultContainer" style="display: none;">
         <h2>Results</h2>
         <p class="result-class" id="resultClass"></p>
-        <p class="result-confidence" id="resultConfidence"></p>
+        <p class="result-similarity" id="resultSimilarity"></p>
     </div>
 
     <script>
@@ -103,7 +103,7 @@
             var fileInput = document.getElementById("fileInput");
             var resultContainer = document.getElementById("resultContainer");
             var resultClass = document.getElementById("resultClass");
-            var resultConfidence = document.getElementById("resultConfidence");
+            var resultSimilarity = document.getElementById("resultSimilarity");
 
             resultContainer.style.display = "none";
 
@@ -116,7 +116,7 @@
                 if (xhr.status === 200) {
                     var response = JSON.parse(xhr.responseText);
                     resultClass.innerText = "Class: " + response.class;
-                    resultConfidence.innerText = "Confidence: " + response.confidence.toFixed(2);
+                    resultSimilarity.innerText = "Similarity: " + response.similarity.toFixed(2);
                     resultContainer.style.display = "block";
                 } else {
                     alert("Error: " + xhr.status);

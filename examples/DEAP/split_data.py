@@ -47,7 +47,7 @@ def main():
 
     # .torcheeg folder is a working directory
     torcheeg_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                 '.torcheeg/')
+                                 '../../.torcheeg/')
     if os.path.exists(torcheeg_path):
         shutil.rmtree(torcheeg_path)
 

@@ -31,8 +31,8 @@ async def predict(file: UploadFile = File(...)):
         img_batch = np.expand_dims(image, 0)
 
         return {
-            'class': 1,
-            'confidence': 1
+            'Rank': 0,
+            'Similarity': 0
         }
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
