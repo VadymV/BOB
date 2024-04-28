@@ -22,8 +22,13 @@ In short, my plan is as follows:
 
 Stay tuned 🤓 for the updates.
 
-The next update is scheduled for **28.04.2024** ⏲️.
-- Enable PyTorch serving :trophy:
+The next update is  scheduled for **05.04.2024** ⏲️ and will include the serving of the model
+for the affective ranking of the images. The idea is the following. The user can upload some images and trigger
+the model to produce affective ranking of the uploaded images according to their similarity to the brain response of a 
+source image. Here, the user triggers model's predictions via the web application that runs as a separate service
+(container image on Cloud Run, FastApi). The model's predictions are produced by a separate service
+using the PyTorch Serve operation that runs on Kubernetes. Such decoupling makes the system maintainable and less
+error-prone.
 
 ----
 
