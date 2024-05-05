@@ -61,10 +61,6 @@ _PIN_MEMORY = True if torch.cuda.is_available() else False
 class DEAP(DEAPDataset):
     """
     DEAP dataset.
-
-    Attributes:
-        root_path (str): A path to the folder containing the original data.
-        io_path (str): A path to the folder containing the preprocessed data
     """
 
     def __init__(self, root_path: str, io_path: Optional[str],

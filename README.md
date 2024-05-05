@@ -22,7 +22,7 @@ In short, my plan is as follows:
 
 Stay tuned 🤓 for the updates.
 
-The next update is  scheduled for **05.04.2024** ⏲️ and will include the serving of the model
+The next update will include the serving of the model
 for the affective ranking of the images. The idea is the following. The user can upload some images and trigger
 the model to produce affective ranking of the uploaded images according to their similarity to the brain response of a 
 source image. Here, the user triggers model's predictions via the web application that runs as a separate service
@@ -50,7 +50,21 @@ error-prone.
 
 
 ### Deploy the model to GKE autopilot cluster and use PyTorch Serving:
-- TODO
+- export MACHINE="cpu"
+- export MODEL_NAME="bob"
+- export MODEL_VERSION="1.0"
+- gcloud container clusters create-auto ml-cluster \
+    --release-channel=regular \
+    --cluster-version=1.28.7-gke.1026000 \
+    --location=${LOCATION}
+- gcloud artifacts repositories create models \
+    --repository-format=docker \
+    --location=${LOCATION} \
+    --description="Repo for BOB serving image"
+- gcloud artifacts repositories describe models \
+    --location=${LOCATION}
+- TODO: Build and push the image using Cloud Build
+- TODO: Deploy the packaged model to GKE
 
 ### Affective ranking of images:
 - TODO
