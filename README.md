@@ -14,7 +14,7 @@ Here, I show how
 to the brain response of a source image
 
 
-In short, my plan is as follows: 
+In short, the steps are as follows:
 1. Create a packaged Python code
 2. Deploy containerized code to an endpoint (e.g., Cloud Run, Kubernetes)
 3. Let users evaluate affective ranking of images by accessing that endpoint
